@@ -5,7 +5,7 @@ import java.util.Objects;
 public class Drivers {
     private String name;
     private int experience;
-    private int year;
+    private int startWorkYear;
 
     public Drivers () {
 
@@ -25,23 +25,23 @@ public class Drivers {
         this.experience = experience;
     }
 
-    public int getYear() {
-        return year;
+    public int getStartWorkYear() {
+        return startWorkYear;
     }
-    public void setYear(int year) {
-        this.year = year;
+    public void setStartWorkYear(int startWorkYear) {
+        this.startWorkYear= startWorkYear;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getName(), getExperience(), getYear());
+        return Objects.hash(getName(), getExperience(), getStartWorkYear());
     }
     @Override
     public String toString() {
         return "Driver{" +
                 "name=" + getName() +
                 ",experience=" + getExperience() +
-                ",year=" + getYear() +
+                ",year=" + getStartWorkYear() +
                 "}";
     }
 }

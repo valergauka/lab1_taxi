@@ -4,9 +4,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
 
-public class Taxi  {
+public class TaxiServis {
     private List<Routs> routs;
-    public Taxi(){
+    public TaxiServis(){
         routs = new LinkedList<>();
     }
     public List<Routs> getRouts() {
@@ -20,7 +20,7 @@ public class Taxi  {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Taxi taxi = (Taxi) o;
+        TaxiServis taxi = (TaxiServis) o;
         return Objects.equals(routs, taxi.routs);
     }
 
@@ -32,7 +32,7 @@ public class Taxi  {
 
     @Override
     public String toString() {
-        return "Taxi{" +
+        return "TaxiServis{" +
                 "routs=" + routs +
                 '}';
     }

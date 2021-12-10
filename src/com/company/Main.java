@@ -3,12 +3,12 @@ package com.company;
 import com.company.taxi.Cars;
 import com.company.taxi.Drivers;
 import com.company.taxi.Routs;
-import com.company.taxi.Taxi;
+import com.company.taxi.TaxiServis;
 
 public class Main {
 
     public static void main(String[] args) {
-        Taxi taxi = new Taxi();
+        TaxiServis taxi = new TaxiServis();
         Cars cars = new Cars();
         cars.setModel("Mercedes");
         cars.setColor("Red");
